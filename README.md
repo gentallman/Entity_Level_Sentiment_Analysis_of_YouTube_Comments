@@ -24,21 +24,32 @@ YouTube is a massive platform where people engage with content and each other. C
 **Training set shape**: (74681, 4)  
 **Validation set shape**: (999, 4)
 
-![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/f580dd2d-d65d-43d9-b6a3-59453856cc96)
+<img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/f580dd2d-d65d-43d9-b6a3-59453856cc96" width = 800>
 
 Initially, the data lacked headers. Therefore, we added column names to enhance comprehension of the dataset:
 
-![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/77f1296a-8e9c-4731-bba3-65bb5bee1548)
+<img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/77f1296a-8e9c-4731-bba3-65bb5bee1548" width = 800>
 
 - **video_id**: A distinct marker for every comment tweet.
 - **entity**: The focal point of interest linked with the comment (e.g., video ID, creator name).
 - **sentiment**: The emotional categorization assigned to the comment concerning the specified entity. There are three categories: Positive, Negative, Neutral. Messages unrelated to the entity are classified as Neutral.
 - **comment**: The written content of the video remark.
 
-![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/82fe59df-617d-475c-af79-951c57b2f8a2)
+<img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/df55f15a-0e6e-402c-b119-a93b5564e934" width = 800>
 
-![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/39c5ea84-9e56-4b08-ae73-941586763b5c)
+- Created a new column named 'comment_word_count' to calculate the word count in each comment. Observed that the average word count per comment ranges from 5 to 30.
 
+<img src= "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/24bca03b-abbf-45cb-b1d8-71a883568156" width = 800>
+
+- Identified extreme outliers in our data by implementing a condition where the word count exceeds 125. This approach enables us to examine comments with exceptionally high word counts along with their corresponding sentiments. from this analysis, we can understand if there's anything unusual or strange in our data.
+
+## Data Preprocessing
+
+
+<p align="center">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/82fe59df-617d-475c-af79-951c57b2f8a2" width = 800>
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/39c5ea84-9e56-4b08-ae73-941586763b5c" width = 800>
+</p>
 - Created a dictionary that includes all emojis along with their meanings. Additionally, made a dictionary of contractions to prepare the YouTube comments for use in further NLP models.
 
 ### Comment Text Processing
@@ -71,4 +82,15 @@ After preprocessing the data, performed Entity Extraction. This involved extract
 
 ![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/3c27fd8a-18b3-49da-9c9b-96fea96b9821)
 
+Now, for sentiment analysis of those extracted entities, we utilized both TextBlob and VADER methods.
+- For a simple and easy-to-implement solution for basic sentiment analysis, TextBlob might suffice. 
+- However, for analyzing social media text with informal language and emoticons, and for more detailed sentiment analysis, VADER could be a better choice. It's often beneficial to experiment with both methods and evaluate their performance based on the use case. 
+
+After trying both, we found VADER to be the most suitable for our analysis.
+
+![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/345f026c-c6f9-4aae-9d27-5950cc191628)
+
+![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/adf8b118-14c6-44df-bcfa-9d18737d4568)
+
+## Data Preprocessing
 
