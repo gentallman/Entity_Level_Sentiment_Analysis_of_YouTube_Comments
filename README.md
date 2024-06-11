@@ -7,18 +7,6 @@
 
 YouTube is a massive platform where people engage with content and each other. Comments play a big role in this interaction, showing different opinions and feelings. But understanding how people feel about specific things like videos or creators is tough. It's crucial to know this sentiment to see how viewers are reacting and improve content strategies. This project uses advanced NLP methods to analyze YouTube comments and figure out how people feel about different parts of the platform
 
-## PROJECT OBJECTIVES
-
-- **Data Exploration**
-- **Data Preprocessing**
-- **Visualizing Sentiments of Comments**
-- **Feature Extraction**
-- **Model Development**
-- **Model Training**
-- **Model Evaluation**
-- **Predicting Sentiments**
-- **Analysis and Interpretation**
-
 ## Data Exprolation
 
 **Training set shape**: (74681, 4)  
