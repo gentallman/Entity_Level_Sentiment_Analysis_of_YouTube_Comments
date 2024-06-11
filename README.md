@@ -242,7 +242,7 @@ Since the accuracy scores are very close, Logistic Regression with BoW tends t
 
 ### @RedDeadRedemption(RDR)	
 <p align="left">
-  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/193ba967-9dae-4077-9c19-bf29e9c55374" width=500>
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/193ba967-9dae-4077-9c19-bf29e9c55374" width=300>
 </p>
 
 <p align="left">
@@ -252,7 +252,7 @@ Since the accuracy scores are very close, Logistic Regression with BoW tends t
 
 ### @GrandTheftAuto(GTA)	
 <p align="left">
-  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/9b94ac38-c6a7-4787-baa2-3919527f1f35" width=500>
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/9b94ac38-c6a7-4787-baa2-3919527f1f35" width=800>
 </p>
 
 <p align="left">
@@ -269,6 +269,31 @@ Since the accuracy scores are very close, Logistic Regression with BoW tends t
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/07fc8e98-2158-4ae0-ac6c-2d8dbf9dbb26" width=800>
 </p>
 
+## Analysis and Interpretation
+
+**Distribution of Sentiment Classes**
+
+Thoroughly examined the distribution of sentiment classes (positive, negative, neutral) across the entities analyzed. We identified which entities have a predominant sentiment (positive, negative, or neutral) and which ones exhibit a more balanced sentiment distribution.
+
+For example, Amazon exhibited the highest positive sentiment, while RedDeadRedemption (RDR) displayed the highest negative sentiment. This indicates that sentiment towards entities on YouTube comments is not uniform and can be influenced by factors such as brand reputation, product quality, and user experiences.
+
+**Patterns and Trends**
+- Positive Comments: Words like "love," "game," "thank," "good," "best," "amazing," and "great" were commonly used in positive comments. This suggests that users express satisfaction, appreciation, and enthusiasm towards certain entities.
+
+- Negative Comments: Negative comments often featured curse words and mentions of specific games and industries such as Twitter, Facebook, and Red Dead Redemption. This indicates dissatisfaction, frustration, or criticism towards certain entities or their associated topics.
+
+- Neutral Comments: Neutral comments had fewer curse words and differed significantly in terms of important words compared to positive and negative comments. This suggests a more balanced or indifferent stance towards the discussed entities.
+
+
+** Challenges Encountered**
+
+- Identification of Entities: One challenge encountered was accurately identifying entities mentioned in the comments. Entities may be referenced using various terms or aliases, requiring comprehensive entity recognition techniques.
+
+- Handling Bias and Subjectivity: Another challenge was handling bias and subjectivity in sentiment analysis. Certain words or phrases may carry different sentiments depending on context, cultural factors, or user intent, necessitating careful consideration** and validation of sentiment labels.
+
+<p align="center">
+        <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="Github Stats" />
+</p>
 
 
 
