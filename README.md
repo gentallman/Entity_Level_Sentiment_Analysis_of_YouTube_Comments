@@ -112,8 +112,51 @@ After trying both, we found VADER to be the most suitable for our analysis.
 To identify the primary words used per label, a word cloud was generated to visualize the most significant words within the training data.
 
 1. Positive Sentiment
+
 <p align="center">
-  <img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/01a34ff3-95dc-4da9-a24c-a287008f3a04" width=800>
+  <img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/01a34ff3-95dc-4da9-a24c-a287008f3a04" width=600>
 </p>
 
+In comments labeled as positive, words like love, game, thank, good, best, amazing and great were commonly used, alongside a diverse range of words conveying positive sentiments.
 
+2. Negative Sentiment
+
+In contrast, negative comments predominantly featured curse words, along with mentions of specific games and industries such as Twitter, Facebook, and dead redemption.
+
+<p align="center">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/87fd5807-aee9-4b04-b3d0-d73c6cba4a19" width="600">
+</p>
+
+3. Neutral Sentiment
+
+Neutral comments, on the other hand, have few curse words, same words as before and differed significantly in terms of important words compared to the other sentiment categories like Italy, twitch tv etc.
+
+<p align="center">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/5d813002-ddcf-447c-9f00-e5afad484888" width="600">
+</p>
+
+**Distribution of Comments per Topic and Sentiment**
+
+<p align="center">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/40b1edc3-66df-4e7d-ac04-6965658b36f7" width=800>
+</p>
+
+Above barplot shows that for games such as ReadDeadRedemption(RDR) and Battelfield has the number of negative comments is the highest while on the other brands the trend is different. Amazon has highest positive comments.
+
+**Distribution of Sentiments**
+
+<p align="center">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/5deb9af0-5148-4952-b017-ee2ac18de67f" width="300">
+</p>
+
+- Sentiment 'Negative’: 47.4%
+  - Minimum Commment Count '518' at Entity 'AssassinsCreed'
+  - Maximum Comment Count '1326' at Entity 'RedDeadRedemption(RDR)’
+
+- Sentiment 'Positive’: 36%
+  - Minimum Commment Count '565' at Entity 'RedDeadRedemption(RDR)'
+  - Maximum Comment Count '1519' at Entity 'Amazon'
+
+- Sentiment 'Neutral’: 16.6%
+  - Minimum Commment Count '183' at Entity 'Amazon'
+  - Maximum Comment Count '508' at Entity 'PlayStation5(PS5)'
