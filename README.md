@@ -279,6 +279,12 @@ For example, Amazon exhibited the highest positive sentiment, while RedDeadRedem
 
 - Handling Bias and Subjectivity: Another challenge was handling bias and subjectivity in sentiment analysis. Certain words or phrases may carry different sentiments depending on context, cultural factors, or user intent, necessitating careful consideration** and validation of sentiment labels.
 
+## Contact
+
+Author: Smit Rana
+
+LinkedIn: https://www.linkedin.com/in/smit98rana/
+
 <p align="center">
         <img src="https://raw.githubusercontent.com/mayhemantt/mayhemantt/Update/svg/Bottom.svg" alt="Github Stats" />
 </p>
