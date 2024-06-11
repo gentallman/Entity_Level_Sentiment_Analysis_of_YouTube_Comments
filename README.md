@@ -39,6 +39,36 @@ Initially, the data lacked headers. Therefore, we added column names to enhance 
 
 ![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/39c5ea84-9e56-4b08-ae73-941586763b5c)
 
-- created a dictionary that includes all emojis along with their meanings. Additionally, made a dictionary of contractions to prepare the YouTube comments for use in further NLP models.
+- Created a dictionary that includes all emojis along with their meanings. Additionally, made a dictionary of contractions to prepare the YouTube comments for use in further NLP models.
+
+### Comment Text Processing
+
+Created a preprocessing function with the following tasks by defining regular expressions:
+
+- **Lowercasing**: Converts all text to lowercase to ensure consistency.
+  ```python
+  lower()
+  ```
+- **URL Replacement**: Replaces all URLs in the text with the word 'URL’.
+  ```python
+  r"((http://)[^ ]*|(https://)[^ ]*|( www\.)[^ ]*)"
+  ```
+- **Emoji Replacement**: Replaces emojis with their meanings (e.g., 😊 becomes EMOJIsmiling_face).
+- **Special Character Removal**: Removes special characters and non-alphanumeric characters.
+  ```python
+  "[^a-zA-Z0-9]"
+  ```
+- **Sequence Reduction**: Reduces sequences of three or more consecutive letters to just two letters (e.g., 'hellooooo' becomes 'hello’).
+  ```python
+  r"(.)\1\1+"
+  r"\1\1"
+  ```
+- **Contraction Expansion**: Expands contractions (e.g., "don't" becomes "do not").
+- **Stopword Removal and Lemmatization**: Removes stopwords (words like 'and', 'the', 'is') and lemmatizes words (reduces them to their base form).
+
+
+After preprocessing the data, performed Entity Extraction. This involved extracting entities such as persons, products, organizations, and geopolitical entities from YouTube comments to analyze the sentiment associated with each one.
+
+![image](https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/3c27fd8a-18b3-49da-9c9b-96fea96b9821)
 
 
