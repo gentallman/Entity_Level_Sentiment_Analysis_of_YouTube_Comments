@@ -24,13 +24,13 @@ YouTube is a massive platform where people engage with content and each other. C
 **Training set shape**: (74681, 4)  
 **Validation set shape**: (999, 4)
 
-<p align="center">
+<p align="left">
 <img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/f580dd2d-d65d-43d9-b6a3-59453856cc96" width = 800>
 </p>
 
 Initially, the data lacked headers. Therefore, we added column names to enhance comprehension of the dataset:
 
-<p align="center">
+<p align="left">
 <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/77f1296a-8e9c-4731-bba3-65bb5bee1548" width = 800>
 </p>
 
@@ -39,13 +39,13 @@ Initially, the data lacked headers. Therefore, we added column names to enhance 
 - **sentiment**: The emotional categorization assigned to the comment concerning the specified entity. There are three categories: Positive, Negative, Neutral. Messages unrelated to the entity are classified as Neutral.
 - **comment**: The written content of the video remark.
 
-<p align="center">
+<p align="left">
 <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/df55f15a-0e6e-402c-b119-a93b5564e934" width = 800>
 </p>
 
 - Created a new column named 'comment_word_count' to calculate the word count in each comment. Observed that the average word count per comment ranges from 5 to 30.
 
-<p align="center">
+<p align="left">
 <img src= "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/24bca03b-abbf-45cb-b1d8-71a883568156" width = 800>
 </p>
 
@@ -54,7 +54,7 @@ Initially, the data lacked headers. Therefore, we added column names to enhance 
 ## Data Preprocessing
 
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/82fe59df-617d-475c-af79-951c57b2f8a2" width = 800>
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/39c5ea84-9e56-4b08-ae73-941586763b5c" width = 800>
 </p>
@@ -89,7 +89,7 @@ Created a preprocessing function with the following tasks by defining regular ex
 After preprocessing the data, performed Entity Extraction. This involved extracting entities such as persons, products, organizations, and geopolitical entities from YouTube comments to analyze the sentiment associated with each one.
 
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/3c27fd8a-18b3-49da-9c9b-96fea96b9821" width=800>
 </p>
 
@@ -100,10 +100,10 @@ Now, for sentiment analysis of those extracted entities, we utilized both TextBl
 After trying both, we found VADER to be the most suitable for our analysis.
 
 
-<p align="center">
+<p align="left">
   <img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/345f026c-c6f9-4aae-9d27-5950cc191628" width=400>
 </p>
-<p align="center">
+<p align="left">
   <img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/adf8b118-14c6-44df-bcfa-9d18737d4568" width=400>
 </p>
 
@@ -113,7 +113,7 @@ To identify the primary words used per label, a word cloud was generated to visu
 
 1. Positive Sentiment
 
-<p align="center">
+<p align="left">
   <img src = "https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/01a34ff3-95dc-4da9-a24c-a287008f3a04" width=600>
 </p>
 
@@ -123,7 +123,7 @@ In comments labeled as positive, words like love, game, thank, good, best, amazi
 
 In contrast, negative comments predominantly featured curse words, along with mentions of specific games and industries such as Twitter, Facebook, and dead redemption.
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/87fd5807-aee9-4b04-b3d0-d73c6cba4a19" width="600">
 </p>
 
@@ -131,13 +131,13 @@ In contrast, negative comments predominantly featured curse words, along with me
 
 Neutral comments, on the other hand, have few curse words, same words as before and differed significantly in terms of important words compared to the other sentiment categories like Italy, twitch tv etc.
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/5d813002-ddcf-447c-9f00-e5afad484888" width="600">
 </p>
 
 **Distribution of Comments per Topic and Sentiment**
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/40b1edc3-66df-4e7d-ac04-6965658b36f7" width=800>
 </p>
 
@@ -145,7 +145,7 @@ Above barplot shows that for games such as ReadDeadRedemption(RDR) and Battelfie
 
 **Distribution of Sentiments**
 
-<p align="center">
+<p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/5deb9af0-5148-4952-b017-ee2ac18de67f" width="300">
 </p>
 
@@ -160,3 +160,84 @@ Above barplot shows that for games such as ReadDeadRedemption(RDR) and Battelfie
 - Sentiment 'Neutral’: 16.6%
   - Minimum Commment Count '183' at Entity 'Amazon'
   - Maximum Comment Count '508' at Entity 'PlayStation5(PS5)'
+
+### Insights 
+
+Performed Positive/Negative sentiment distribution by Entities.
+- The data indicates that Amazon comments exhibit the most positive sentiment (67.09%) among the discussed entities, with subsequent positive sentiments found in comments related to AssassinsCreed, Hearthstone, and Borderlands.
+- Conversely, RedDeadRedemption (RDR) comments display the highest level of negative sentiment (61.33%) in our dataset.
+
+Additionally, retrieved the Top Positive/Negative Entities from comments.
+- The majority of positive comments regarding Amazon are related to Manga, with people sharing comments about the volumes of Kamuy and Hakusho sold on the platform. However, there are a few comments mentioning Jeff Bezos and Amazon that express negative sentiment.
+- In contrast, comments about the game Red Dead Redemption mostly convey negative sentiments. Entities like Arthur Morgan and Tsushima are the top negative sentiment entities. It's possible that people are comparing the game and its protagonist, Arthur Morgan, with another game called "Ghost of Tsushima."
+- Regarding Assassins Creed, positively sentimented entities include Netflix and Demon Souls. People are enthusiastic and post positive comments about a brand-new, live-action Assassin's Creed series coming to Netflix. Additionally, they relate Demon Souls video game with Assassins Creed in a positive light.
+
+
+## Feature Extraction
+
+**Bag of words (BoW)** is a traditional text representation technique that is widely used in NLP, particularly in text classification problems. The main idea is to represent the text under consideration as a bag (collection) of words, ignoring the order and context.
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/ca1acfc9-c72c-48f1-9429-0e1fc2e8f6a8" width=500>
+</p>
+
+**Term frequency-inverse document frequency**, or **TF-IDF**, method attempts to quantify the importance of a given word in relation to other words in the document and in the corpus.
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/bf76cd76-6de7-4961-b651-8c94e601e0d5" width=500>
+</p>
+
+**Difference between BOW and TF IDF**
+
+- CountVectorizer simply counts the number of times a word appears in a document (using a bag-of-words approach).
+- While TF-IDF Vectorizer takes into account not only how many times a word appears in a document but also how important that word is to the whole corpus.
+
+After performing CountVectorizer() and TfidfVectorizer(), X_train_bow, X_val_bow, X_train_tfidf, and X_val_tfidf contain the feature representations of the comments using bag-of-words and TF-IDF techniques respectively.
+
+## Model Development
+
+**Bag-of-Words (BoW) based model with Logistic Regression**
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/858471f0-f7cc-49ea-b928-207d532a4ca4" width=500>
+</p>
+
+
+**TF-IDF based model with SVM**
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/58ca8299-4b62-4b0d-b3a5-6cdc626413f4" width=500>
+</p>
+
+
+## Model Training
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/431f1913-fdb6-4866-9ece-feba7b2be279" width=800>
+</p>
+
+
+## Model Evaluation
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/942d6e3f-12b2-4632-b4a5-9a7d5314160b" width=800>
+</p>
+
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/8fbd952c-e392-490b-aaf4-07f22b8e099e" width=500>
+</p>
+
+
+
+Also, displayed some actual vs predicted labels along with comment text
+
+Based on the this, both the Logistic Regression model with Bag-of-Words (BoW) and the Support Vector Machine (SVM) model with TF-IDF achieve high accuracy on the validation dataset. Here's a summary of their performance:
+
+- Logistic Regression (BoW) Validation Accuracy: 92.69%
+- SVM (TF-IDF) Validation Accuracy: 92.55%
+
+Both models also exhibit similar precision, recall, and F1-score across different sentiment classes.
+
+Since the accuracy scores are very close, Logistic Regression with BoW tends to be more interpretable and computationally efficient compared to SVM with TF-IDF, especially for large datasets.
+
