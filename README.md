@@ -177,13 +177,13 @@ Additionally, retrieved the Top Positive/Negative Entities from comments.
 
 **Bag of words (BoW)** is a traditional text representation technique that is widely used in NLP, particularly in text classification problems. The main idea is to represent the text under consideration as a bag (collection) of words, ignoring the order and context.
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/ca1acfc9-c72c-48f1-9429-0e1fc2e8f6a8" width=500>
 </p>
 
 **Term frequency-inverse document frequency**, or **TF-IDF**, method attempts to quantify the importance of a given word in relation to other words in the document and in the corpus.
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/bf76cd76-6de7-4961-b651-8c94e601e0d5" width=500>
 </p>
 
@@ -199,14 +199,14 @@ After performing CountVectorizer() and TfidfVectorizer(), X_train_bow, X_val_bow
 **Bag-of-Words (BoW) based model with Logistic Regression**
 
 <p align="left">
-  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/858471f0-f7cc-49ea-b928-207d532a4ca4" width=500>
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/858471f0-f7cc-49ea-b928-207d532a4ca4" width=800>
 </p>
 
 
 **TF-IDF based model with SVM**
 
 <p align="left">
-  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/58ca8299-4b62-4b0d-b3a5-6cdc626413f4" width=500>
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/58ca8299-4b62-4b0d-b3a5-6cdc626413f4" width=800>
 </p>
 
 
@@ -220,15 +220,12 @@ After performing CountVectorizer() and TfidfVectorizer(), X_train_bow, X_val_bow
 ## Model Evaluation
 
 <p align="left">
-  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/942d6e3f-12b2-4632-b4a5-9a7d5314160b" width=800>
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/942d6e3f-12b2-4632-b4a5-9a7d5314160b" width=500>
 </p>
-
 
 <p align="left">
   <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/8fbd952c-e392-490b-aaf4-07f22b8e099e" width=500>
 </p>
-
-
 
 Also, displayed some actual vs predicted labels along with comment text
 
@@ -240,4 +237,38 @@ Based on the this, both the Logistic Regression model with Bag-of-Words (BoW) an
 Both models also exhibit similar precision, recall, and F1-score across different sentiment classes.
 
 Since the accuracy scores are very close, Logistic Regression with BoW tends to be more interpretable and computationally efficient compared to SVM with TF-IDF, especially for large datasets.
+
+## Let’s Predict Random Live Comment 	
+
+### @RedDeadRedemption(RDR)	
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/193ba967-9dae-4077-9c19-bf29e9c55374" width=500>
+</p>
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/633a13ce-e7e3-472b-a252-97c04587f352" width=800>
+</p>
+
+
+### @GrandTheftAuto(GTA)	
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/9b94ac38-c6a7-4787-baa2-3919527f1f35" width=500>
+</p>
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/cfa3515c-608e-46f7-a856-3af0ef424d31" width=800>
+</p>
+
+
+### @Battlefield
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/061b2f58-e492-4b60-8af3-449494d6304d" width=500>
+</p>
+
+<p align="left">
+  <img src="https://github.com/gentallman/Entity_Level_Sentiment_Analysis_of_YouTube_Comments/assets/78334851/07fc8e98-2158-4ae0-ac6c-2d8dbf9dbb26" width=800>
+</p>
+
+
+
 
